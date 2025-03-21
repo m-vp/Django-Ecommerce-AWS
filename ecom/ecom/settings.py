@@ -80,18 +80,31 @@ WSGI_APPLICATION = "ecom.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#         # "ENGINE": "django.db.backends.postgresql",
+#         # "NAME": env("DB_NAME"),
+#         # "USER": env("DB_USER"),
+#         # "PASSWORD": env("DB_PASS"),
+#         # "HOST": env("DB_HOST"),
+#         # "PORT": env("DB_PORT"),
+#     }
+# }
+
+
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-        # "ENGINE": "django.db.backends.postgresql",
-        # "NAME": env("DB_NAME"),
-        # "USER": env("DB_USER"),
-        # "PASSWORD": env("DB_PASS"),
-        # "HOST": env("DB_HOST"),
-        # "PORT": env("DB_PORT"),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ecommerce',
+        'USER': 'master',
+        'PASSWORD': 'masterpassword',
+        'HOST': 'ecommerce.ce2bp6jj4rwp.us-east-1.rds.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
