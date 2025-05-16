@@ -97,13 +97,14 @@ WSGI_APPLICATION = "ecom.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ecommerce',
-        'USER': 'master',
-        'PASSWORD': 'masterpassword',
-        'HOST': 'ecommerce.cjqsc4skqzet.us-east-1.rds.amazonaws.com',
+        'NAME': 'djangoDB',  # new DB name
+        'USER': 'admin_db',  # same user
+        'PASSWORD': 'admin_db',  # same password
+        'HOST': 'django-db.cst8o62y8nml.us-east-1.rds.amazonaws.com',  # new endpoint
         'PORT': '5432',
     }
 }
+
 
 
 

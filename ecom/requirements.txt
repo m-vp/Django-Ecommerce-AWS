@@ -72,3 +72,4 @@ python-dotenv
 sqlparse
 typing-extensions
 whitenoise
+psycopg2-binary
